@@ -9,6 +9,10 @@ import '../css/index.css';
 import React,{Component} from 'react';
 import axios from "axios";
 
+const api = axios.create({
+    baseURL: "https://"
+})
+
 export default class Restaurant extends Component {
     
     constructor(props){
@@ -33,9 +37,11 @@ export default class Restaurant extends Component {
             })
         }
 
-        submitForm(){
-                //alert(JSON.stringify(this.state));
-                axios.post this.state;
+        submitForm(e){
+            e.preventDefault();
+            api.post('restaurantes/', this.state).then(res => {
+                console.log(res.data)
+            })
         }
 
     render(){

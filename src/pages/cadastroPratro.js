@@ -7,6 +7,11 @@ import Col from 'react-bootstrap/Col';
 import '../css/cprato.css';
 import '../css/index.css';
 import React,{Component} from 'react';
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: "https://"
+})
 
 export default class Food extends Component {
     
@@ -32,8 +37,11 @@ export default class Food extends Component {
             })
         }
 
-        submitForm(){
-                alert(JSON.stringify(this.state));
+        submitForm(e){
+            e.preventDefault();
+            api.post('pratos/', this.state).then(res => {
+                console.log(res.data)
+            })
         }
 
     render(){

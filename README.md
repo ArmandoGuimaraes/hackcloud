@@ -21,6 +21,7 @@ Se chegou a hora de codificar sua aplicação e bateu aquela dúvida de como faz
 Durante as integrações entre front-end e o endpoint back-end, podemos receber alguns erros de **Access-Control-Allow-Origin** o famoso **CORS**. Para resolver esse problema, também fizemos um vídeo explicando como configurar sua requisição, para fazer autenticação de forma correta e liberar o CORS via header. Acesse o link abaixo: 
 
 [Liberando CORS](https://videohub.oracle.com/media/Hack%40Cloud+-+Liberando+CORS+para+POST/1_k55o2zzq)
+<<<<<<< HEAD
 
 # Atenção: Dica para rodar o projeto em container
 
@@ -59,3 +60,5 @@ O código ficara assim:
 Pronto, agora podemos gerar a imagem docker e colocar pra rodar no container. Para rodar novamente a aplicação localmente, remova o trecho que tudo voltará ao normal.
 
 # hackcloud
+=======
+>>>>>>> f3c1dca939c7284226bf2b10b2f2ab26d7b8c04e
