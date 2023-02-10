@@ -10,7 +10,7 @@ import React,{Component} from 'react';
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://"
+    baseURL: "https://prod-gramfjhhr7jr-gr.integration.sa-saopaulo-1.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/USUARIO_API/1.0/"
 })
 
 export default class User extends Component {
